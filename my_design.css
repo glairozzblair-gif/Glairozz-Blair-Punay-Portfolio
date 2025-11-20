@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #e6f0ff;
+    color: #003366;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 10%;
+    background: linear-gradient(135deg, #3366ff, #0033cc);
+    color: white;
+    border-radius: 0 0 50px 50px;
+    transition: background 0.5s ease;
+}
+
+.header:hover {
+    background: linear-gradient(135deg, #0033cc, #3366ff);
+}
+
+.profile-img {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #99ccff;
+}
+
+.name-subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #cce0ff;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0 20px 0;
+    color: #003366;
+    position: relative;
+}
+
+.section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #3366ff;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+.about-containers {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.about-container {
+    flex: 1;
+    background: #cce0ff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.about-container:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: #99ccff;
+}
+
+.skills-containers {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.skills-container {
+    flex: 1;
+    background: #cce0ff;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skills-container:hover {
+    transform: translateY(-10px) scale(1.02);
+    background: #99ccff;
+}
+
+.skill-list {
+    list-style: none;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-list li {
+    background: #cce0ff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-list li:hover {
+    transform: scale(1.1);
+    background: #99ccff;
+}
+
+.skill-list img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.skill-list img:hover {
+    transform: scale(1.5);
+}
+
+.certificates-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: #cce0ff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.certificates-container:hover {
+    transform: translateY(-5px) scale(1.02);
+    background: #99ccff;
+}
+
+.certificates-container p {
+    font-size: 1.1rem;
+    color: #003366;
+    text-align: center;
+    padding: 8px 12px;
+    background: white;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+    cursor: default;
+}
+
+.certificates-container p:hover {
+    transform: scale(1.05);
+    background: #e6f0ff;
+    color: #3366ff;
+}
+
+.contacts-container {
+    background: #cce0ff;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contacts-container:hover {
+    transform: translateY(-5px);
+    background: #99ccff;
+}
+
+.contacts-container p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacts-container img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.contacts-container img:hover {
+    transform: scale(1.5);
+}
+
+.contacts-container a {
+    color: #003366;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacts-container a:hover {
+    color: #3366ff;
+}
+
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .about-containers,
+    .skills-containers {
+        flex-direction: column;
+    }
+    .skill-list {
+        flex-direction: column;
+    }
+}
