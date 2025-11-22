@@ -428,6 +428,12 @@ body {
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
+.contactnote-container a {
+    display: block;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
 .contacts-container:hover {
     transform: translateY(-5px);
     background: #99ccff;
